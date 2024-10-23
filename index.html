@@ -20,8 +20,8 @@
       <label for="string">Strengur:</label>
       <textarea id="string" name="string" rows="4" cols="50"></textarea>
       <div class="buttons">
-        <button type="submit">Greining</button>
-        <button type="reset">Hreinsa</button>
+        <button id ="greinaTakki" type="submit">Greining</button>
+        <button type="hreinsaTakki">Hreinsa</button>
       </div>
       <!--
         Þetta er sjálfgefið falið með CSS þar til JavaScript kóði keyrir greiningu.
@@ -29,19 +29,19 @@
         og sýna dæmin sem eru skilgreind hér að neðan.
         JavaScript kóðir fjarlægir dæmin sem eru skilgreind hér að neðan þegar greining er keyrð.
         -->
-      <div class="output hidden">
+      <div id="output"class="output hidden">
         <p>Fyrir gefinn streng:</p>
-        <code class="wide"><pre class="input">Halló hæ heimur!</pre></code>
+        <code class="wide"><pre id="input" class="input">Halló hæ heimur!</pre></code>
         <p>Er niðurstaða greiningar:</p>
         <ul>
-          <li>Lengsta orðið er: <code class="longest">heimur!</code>.</li>
-          <li>Stysta orðið er: <code class="shortest">hæ</code>.</li>
-          <li>Fjöldi sérhljóða er: <code class="vowels">6</code>.</li>
-          <li>Fjöldi samhljóða er: <code class="consonants">7</code>.</li>
-          <li>Strengurinn er <span class="palindrome">ekki</span> samhverfur.</li>
+          <li>Lengsta orðið er: <code id="longest" class="longest">heimur!</code>.</li>
+          <li>Stysta orðið er: <code id="shortest" class="shortest">hæ</code>.</li>
+          <li>Fjöldi sérhljóða er: <code id="vowels" class="vowels">6</code>.</li>
+          <li>Fjöldi samhljóða er: <code id="consonants" class="consonants">7</code>.</li>
+          <li>Strengurinn er <span id="palindrome" class="palindrome">ekki</span> samhverfur.</li>
         </ul>
         <p>Viðsnúinn er strengurinn:</p>
-        <code class="wide"><pre class="reversed">!rumieh æh óllaH</pre></code>
+        <code class="wide"><pre id="reversed" class="reversed">!rumieh æh óllaH</pre></code>
       </div>
     </form>
   </main>
